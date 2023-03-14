@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css" type="text/css" />
+	<link rel="stylesheet" href="css/app_pc.css" type="text/css" />
+	<link rel="stylesheet" href="css/app_tb.css" type="text/css" />
+	<link rel="stylesheet" href="css/animacion.css" type="text/css" />
+    <script src="java/codigo.js"></script>
+    <title>JAVASCRIPT</title>
+</head>
+    <body>
+        <header id="cabecera">
+            <input type="checkbox" class="checkbox" id="menu-toggle" />
+            <label for="menu-toggle" class="menu-toggle center">&equiv;</label>
+                <nav id="menuPrincipal">
+                    <a class="opcion" href="#Home">JAVASCRIPT</a>
+                </nav>
+        </header>
+        
+       
+        <section class="contenido">
+            <figcaption id="fig">
+                <img src="img/fondo.png" alt="">
+            </figcaption>
+            <div id="content">
+                <h1 id="txtNombre">TEXTO</h1>
+                <h3 id="txtPuesto">Texto 2</h3>
+            </div>
+            <button class="btn" onclick="Abrir()">Editar</button>
+        </section>
+
+        <div class="windowform" id="windowform">
+            <div class="contenedor">
+                <div class="contenedorform">
+                    <form action="">
+                        <label>Nombre: </label>
+                        <input type="text" id="inputNombre">
+                        <label>Puesto: </label>
+                        <input type="text" id="inputPuesto">
+                    </form>
+                    <button class="btn" onclick="CerrarButton()">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+        <footer id="contacto">
+            <div><p>Luis Angel Suarez Flores</p></div>
+        </footer> 
+    </body>
+</html>

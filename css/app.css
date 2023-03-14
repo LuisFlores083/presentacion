@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Oldenburg&family=Yusei+Magic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Rubik&display=swap');
+
+@font-face {
+    font-family: 'social';
+    src: url('../fonts/SocialMedia-ZxpB.ttf');
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 0px;
+}
+
+html{
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3{
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    font-size: 3rem; 
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+h3{
+    font-size: 1.8rem;
+}
+p{
+    font-size: 1.4rem;
+    font-family: 'Rubik', sans-serif;
+}
+a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+header, .contenido, footer{
+    min-width: 320px;
+}
+
+#gerente, #menu-toggle{
+    display: none;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    
+}
+    .center{
+        text-align: center;
+    }
+    
+
+.menu-toggle{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 5%;
+    top: 15px;
+}
+
+#menuPrincipal{
+    height: 0px;
+    width: 40px;
+    margin: 10px 0 0 5%;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+    background-color: white;
+}
+
+#content{
+    text-align: center;
+    position: relative;
+    color: white;
+    padding: 25% 0;
+}
+
+#menu-toggle:checked ~ #menuPrincipal{
+    height: 200px;
+    width: 50%;
+
+}
+    .opcion{
+        display: block;
+        font-size: 1rem;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+    }
+
+    .opcion:hover{
+        color: rgb(104, 104, 104);
+        background-color: rgb(212, 212, 212);
+    }
+
+
+/*////////////////////////////////SECCIONES///////////////////////*/
+.contenido{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 100px;
+    position: relative;
+}
+
+#fig{
+    position: absolute;
+}
+
+#fig img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.btn{
+    background-color: black;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    width: 100px;
+    height: 25px;
+    position: relative;
+    right: inherit;
+    vertical-align: middle;
+}
+.btn:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.windowform {
+    background: rgba(33, 41, 52, .85);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 999;
+    transition: background .6s;
+}
+
+
+.windowform .contenedor {
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(33, 41, 52, .75);
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    max-width: 600px;
+    min-width: 320px !important;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+}
+
+.contenedorform{
+    display: block;
+}
+
+.contenedorform div {
+    width: 100%;
+}
+
+
+footer{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    padding: 20px 5%;
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
